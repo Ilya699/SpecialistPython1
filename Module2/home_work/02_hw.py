@@ -8,3 +8,18 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+
+print ("На лугу пасется...n коров")
+n = int(input("введите кол-во коров " ))
+
+
+if n >= 11 and n <= 14:
+        print(n, 'коров')
+else:
+        temp = n % 10
+        if temp == 0 or (temp >= 5 and temp <= 9):
+                print("На лугу пасется ", n, 'коров')
+        if temp == 1:
+                print("На лугу пасется ", n, "корова")
+        if temp >=2 and temp <=4:
+                print("На лугу пасется ", n, 'коровы')
